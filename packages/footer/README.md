@@ -1,0 +1,3 @@
+# FOOTER
+
+Readme on Verdaccio
