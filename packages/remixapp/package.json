@@ -32,6 +32,9 @@
   "engines": {
     "node": ">=14"
   },
+  "publishConfig": {
+		"registry": "http://localhost:4873"
+  },
   "nx": {
     "targets": {
       "build": {

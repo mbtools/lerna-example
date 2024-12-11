@@ -1,0 +1,56 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   private: false,
+0 silly argv   lernaVersion: '7.1.5',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v7.1.5
+2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
+3 verbose rootPath C:\Github\~verdaccio\tests\getting-started-example
+4 info current version 0.0.0
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch main
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "2e37c43" => {"refCount":"14","sha":"2e37c43","isDirty":false}
+15 info Assuming all packages changed
+16 verbose updated footer
+17 verbose updated header
+18 verbose updated remixapp
+19 verbose git-describe undefined => "2e37c43"
+20 silly git-describe parsed => {"refCount":"14","sha":"2e37c43","isDirty":false}
+21 info execute Skipping releases
+22 silly lifecycle No script for "preversion" in "root", continuing
+23 silly lifecycle No script for "preversion" in "footer", continuing
+24 silly lifecycle No script for "preversion" in "header", continuing
+25 silly lifecycle No script for "version" in "header", continuing
+26 silly lifecycle No script for "version" in "footer", continuing
+27 verbose version Updating root package-lock.json
+28 silly lifecycle No script for "version" in "root", continuing
+29 silly gitAdd [
+29 silly gitAdd   'packages/header/package.json',
+29 silly gitAdd   'packages/header/package-lock.json',
+29 silly gitAdd   'packages/footer/package.json',
+29 silly gitAdd   'packages/footer/package-lock.json',
+29 silly gitAdd   'lerna.json',
+29 silly gitAdd   'package-lock.json'
+29 silly gitAdd ]
+30 silly gitCommit v0.0.1
+31 verbose git [ 'commit', '-m', 'v0.0.1' ]
+32 silly gitTag v0.0.1 git tag %s -m %s
+33 verbose git [ 'tag', 'v0.0.1', '-m', 'v0.0.1' ]
+34 silly lifecycle No script for "postversion" in "footer", continuing
+35 silly lifecycle No script for "postversion" in "header", continuing
+36 silly lifecycle No script for "postversion" in "root", continuing
+37 info git Pushing tags...
+38 silly gitPush origin main
+39 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin main
+39 error remote: Permission to lerna/getting-started-example.git denied to mbtools.
+39 error fatal: unable to access 'https://github.com/lerna/getting-started-example/': The requested URL returned error: 403
+39 error     at makeError (C:\Github\~verdaccio\tests\getting-started-example\node_modules\execa\lib\error.js:59:11)
+39 error     at handlePromise (C:\Github\~verdaccio\tests\getting-started-example\node_modules\execa\index.js:114:26)

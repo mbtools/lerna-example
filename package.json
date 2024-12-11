@@ -9,5 +9,8 @@
   },
   "volta": {
     "node": "18.17.1"
-  }
+  },
+  "publishConfig": {
+		"registry": "http://localhost:4873"
+	}
 }
