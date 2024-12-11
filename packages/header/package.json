@@ -1,6 +1,6 @@
 {
   "name": "header",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -24,6 +24,6 @@
     "rimraf": "^3.0.2"
   },
   "publishConfig": {
-		"registry": "http://localhost:4873"
+    "registry": "http://localhost:4873"
   }
 }
